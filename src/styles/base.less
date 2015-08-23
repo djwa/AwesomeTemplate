@@ -1,0 +1,64 @@
+html {
+  overflow-y: scroll;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: @font-rate;
+  background: @brand-color0;
+}
+
+header {
+  padding-top: 20px;
+  .logo {
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    background: url("../images/logos/logo-200.png") no-repeat center;
+    background-size: 100% auto;
+    z-index: 2;
+    position: relative;
+  }
+  nav {
+    ul {
+      text-align: right;
+      li {
+        max-width: 110px;
+        display: inline-block;
+        text-align: center;
+        span {
+          width: 100%;
+          .transition(color .7s ease-in-out);
+          color: black;
+        }
+        &:hover {
+          cursor: pointer;
+          span {
+            color: rgb(174, 39, 82);
+            .rotateY(25deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  @MAIN_AREA_MIN_HEIGHT: 400px;
+  background: @MAIN_BACKGROUND no-repeat 0 0;
+  background-size: cover;
+  min-height: @MAIN_AREA_MIN_HEIGHT;
+  h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: @MAIN_AREA_MIN_HEIGHT;
+    font-size: 3em;
+  }
+}
+
+nav {
+}

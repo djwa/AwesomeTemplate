@@ -1,0 +1,44 @@
+{
+  "name": "djwaHTMLtemplate",
+  "version": "1.0.0",
+  "description": "djwa HTML template",
+  "main": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "keywords": [
+    "HTMLtemplate"
+  ],
+  "author": "Jeremi Walewicz-Antonowicz",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "~1.3.12"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.12.2",
+    "grunt-contrib-jshint": "~0.11.0",
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-uglify": "~0.8.0",
+    "grunt-processhtml": "^0.3.7",
+    "grunt-usemin": "~3.0.0",
+    "load-grunt-configs": "~0.4.2",
+    "load-grunt-tasks": "~3.1.0",
+    "time-grunt": "~1.0.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-imagemin": "~0.9.4",
+    "grunt-autoprefixer": "~3.0.3",
+    "grunt-responsive-images": "~0.1.4",
+    "grunt-spritesmith": "~2.20.0"
+  }
+}

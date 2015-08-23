@@ -1,0 +1,25 @@
+
+@import "sprite/icons30.less";
+@import "sprite/icons22.less";
+@import "sprite/icons44.less";
+@import "sprite/icons88.less";
+
+@NO_CACHE_SUFFIX: '?no_cache=';
+
+.sprite-image-no-cache(@sprite) {
+  @sprite-image: ~`"@{sprite}".split(', ')[8].slice(1, -2)`;
+  background-image: url(~"@{sprite-image}@{NO_CACHE_SUFFIX}@{NO_CACHE}");
+}
+.sprite-no-cache(@sprite) {
+  .sprite-image-no-cache(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+.sprite-background-size(@sprite) {
+  @sprite-width: ~`"@{sprite}".split(', ')[6]`;
+  @sprite-height: ~`"@{sprite}".split(', ')[7]`;
+  background-size: @sprite-width  @sprite-height;
+}
+

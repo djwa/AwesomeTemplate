@@ -1,0 +1,73 @@
+@MIN_PIXEL_RATION: 1.3;
+
+.icon-wrapper-22 {
+  display: inline-block;
+  height: 22px;
+}
+
+.icon-wrapper-30 {
+  display: inline-block;
+  height: 30px;
+}
+
+.icon-wrapper-44 {
+  display: inline-block;
+  height: 44px;
+}
+
+.icon-wrapper-88 {
+  display: inline-block;
+  height: 88px;
+}
+
+.icon{
+  display: inline-block;
+  background: no-repeat;
+}
+
+
+//icons
+.icon-home {
+  .sprite-no-cache(@icon-home-22);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: @MIN_PIXEL_RATION), only screen and (min-device-pixel-ratio: @MIN_PIXEL_RATION) {
+  .icon-home {
+    .sprite-no-cache(@icon-home-22);
+    .sprite-background-size(@icon-home-22);
+    .sprite-image-no-cache(@icon-home-44);
+  }
+}
+
+.icon-search {
+  .sprite-no-cache(@icon-search-22);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: @MIN_PIXEL_RATION), only screen and (min-device-pixel-ratio: @MIN_PIXEL_RATION) {
+  .icon-search {
+    .sprite-no-cache(@icon-search-22);
+    .sprite-background-size(@icon-search-22);
+    .sprite-image-no-cache(@icon-search-44);
+  }
+}
+
+
+.icon-wifi {
+  .sprite-no-cache(@icon-wifi-22);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: @MIN_PIXEL_RATION), only screen and (min-device-pixel-ratio: @MIN_PIXEL_RATION) {
+  .icon-wifi {
+    .sprite-no-cache(@icon-wifi-22);
+    .sprite-background-size(@icon-wifi-22);
+    .sprite-image-no-cache(@icon-wifi-44);
+  }
+}
+
+.icon-wrench {
+  .sprite-no-cache(@icon-wrench-22);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: @MIN_PIXEL_RATION), only screen and (min-device-pixel-ratio: @MIN_PIXEL_RATION) {
+  .icon-wrench {
+    .sprite-no-cache(@icon-wrench-22);
+    .sprite-background-size(@icon-wrench-22);
+    .sprite-image-no-cache(@icon-wrench-44);
+  }
+}
