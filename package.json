@@ -39,6 +39,7 @@
     "grunt-contrib-imagemin": "~0.9.4",
     "grunt-autoprefixer": "~3.0.3",
     "grunt-responsive-images": "~0.1.4",
-    "grunt-spritesmith": "~2.20.0"
+    "grunt-spritesmith": "~2.20.0",
+    "grunt-manifest": "~0.4.4"
   }
 }

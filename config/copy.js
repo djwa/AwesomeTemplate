@@ -9,7 +9,7 @@ module.exports = {
                     'index.html',
                     //'images/*', //commented as other tasks are resposible for coping images
                     'views/**/*.html',
-                    'scripts/**/*.js',
+                    'js/**/*.js',
                     'fonts/**/.*'
                 ]
             }, {

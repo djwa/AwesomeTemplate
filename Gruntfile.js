@@ -39,8 +39,9 @@ module.exports = function (grunt) {
         'imagemin', // minify images
         'copy:dist', // copy files
         'less:development', // less compiler
-        'useminPrepare', // prepares the configuration to transform specific blocks
+        //'useminPrepare', // prepares the configuration to transform specific blocks
         'usemin', //replaces the blocks by the file they reference
+        //'manifest', // creates manifest
         'processhtml' // process html files at build time to modify them depending on the release environment
     ]);
 
