@@ -37,11 +37,12 @@ module.exports = function (grunt) {
         'clean:dist', // clean build from old empty directories
         'prepare-graphics', // sprites images *has to be before less compilation
         'imagemin', // minify images
+        'modernizr:dist', // minify images
         'copy:dist', // copy files
         'less:development', // less compiler
         //'useminPrepare', // prepares the configuration to transform specific blocks
         'usemin', //replaces the blocks by the file they reference
-        //'manifest', // creates manifest
+        //'manifest', // creates manifest file
         'processhtml' // process html files at build time to modify them depending on the release environment
     ]);
 
