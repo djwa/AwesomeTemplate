@@ -22,4 +22,4 @@ CONTAINS
 - live server to run project,
 - watch task to automatically update build
 
-TODO:  HTML5 offile manifest, HTML5 localstorage entry
+TODO: HTML5 local storage entry, cache the sprites!

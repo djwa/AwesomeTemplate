@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         'less:development', // less compiler
         //'useminPrepare', // prepares the configuration to transform specific blocks
         'usemin', //replaces the blocks by the file they reference
-        //'manifest', // creates manifest file
+        'manifest', // generates manifest file
         'processhtml' // process html files at build time to modify them depending on the release environment
     ]);
 
