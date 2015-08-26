@@ -2,7 +2,7 @@ module.exports = function (grunt, config) {
     return {
         dist: {
             "devFile": "<%= srcConfig.src %>/js/modernizr.dev.js",
-            "outputFile": "<%= srcConfig.dist %>/js/modernizr-custom.js",
+            "outputFile": "<%= srcConfig.dist %>/js/modernizr.js",
             "extra": {
                 "shiv": true,
                 "printshiv": false,
@@ -11,7 +11,7 @@ module.exports = function (grunt, config) {
                 "cssclasses": true
             },
             "extensibility": {
-                "addtest": false,
+                "addtest": true,
                 "prefixed": false,
                 "teststyles": false,
                 "testprops": false,
@@ -22,9 +22,12 @@ module.exports = function (grunt, config) {
                 "cssclassprefix": ""
             },
             "uglify": true,
-            "tests": [],
-            "parseFiles": true,
-            "matchCommunityTests": false,
+            "tests": [
+                'csstransforms3d',
+                'flexbox'
+            ],
+            "parseFiles": false,
+            "matchCommunityTests": true,
             "customTests": []
         }
     }
