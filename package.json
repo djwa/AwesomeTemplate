@@ -36,6 +36,7 @@
     "time-grunt": "~1.0.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-clean": "~0.6.0",
+    "jpegtran-bin": "0.2.0", //fix problem with image tasks for windows 10
     "grunt-contrib-imagemin": "~0.9.4",
     "grunt-autoprefixer": "~3.0.3",
     "grunt-responsive-images": "~0.1.4",
